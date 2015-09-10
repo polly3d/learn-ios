@@ -33,6 +33,13 @@ NSString *docPath()
     	tasks = [[NSMutableArray alloc] init];
     }
 
+    if([tasks count] == 0)
+    {
+    	[tasks addObject:@"Walk the dogs"];
+    	[tasks addObject:@"Feed the hogs"];
+    	[tasks addObject:@"Chop the logs"];
+    }
+
     CGRect windowFrame = [[UIScreen mainScreen] bounds];
     UIWindow *theWindow = [[UIWindow alloc] initWithFrame:windowFrame];
     [self setWindow:theWindow];
@@ -43,6 +50,7 @@ NSString *docPath()
 
     taskTable = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
     [taskTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [taskTable setDataSource:self];
 
     taskField = [[UITextField alloc] initWithFrame:fieldFrame];
     [taskField setBorderStyle:UITextBorderStyleRoundedRect];
@@ -65,7 +73,34 @@ NSString *docPath()
 
 - (void)addTask:(id)sender
 {
-    
+    NSString *t = [taskField text];
+    if([t isEqualToString:@""])
+    {
+    	return;
+    }
+
+    [tasks addObject:t];
+    [taskTable reloadData];
+    [taskField setText:@""];
+    [taskField resignFirstResponder];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	return [tasks count];
+}
+
+- (UITalbeviewCell)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	UITableviewCell *c = [taskTable dequeueReusableCellWidthIdentifier:@"Cell"];
+	if(!c)
+	{
+		c = [[UITableviewCell alloc] initWidthStyle:UITableviewCellStyleDefault resuIdentifier:@"Cell"];
+		NSString *item = [tasks objectAtIndex[indexPath row]];
+		[[c textLabel] setText:item];
+
+		return c;
+	}
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -76,6 +111,9 @@ NSString *docPath()
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
+	[tasks writeToFile:docPath() atomically:YES];
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -88,6 +126,8 @@ NSString *docPath()
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+
+    [tasks writeToFile:docPath() atomically:YES];
 }
 
 @end
