@@ -90,17 +90,16 @@ NSString *docPath()
 	return [tasks count];
 }
 
-- (UITalbeviewCell)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableviewCell *c = [taskTable dequeueReusableCellWidthIdentifier:@"Cell"];
+	UITableViewCell *c = [taskTable dequeueReusableCellWithIdentifier:@"Cell"];
 	if(!c)
 	{
-		c = [[UITableviewCell alloc] initWidthStyle:UITableviewCellStyleDefault resuIdentifier:@"Cell"];
-		NSString *item = [tasks objectAtIndex[indexPath row]];
-		[[c textLabel] setText:item];
-
-		return c;
+		c = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
 	}
+    NSString *item = [tasks objectAtIndex:[indexPath row]];
+    [[c textLabel] setText:item];
+    return c;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -10,7 +10,7 @@
 
 NSString *docPath(void);
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate,UITableViewDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UITableViewDataSource>
 {
 	UITableView *taskTable;
 	UITextField *taskField;
