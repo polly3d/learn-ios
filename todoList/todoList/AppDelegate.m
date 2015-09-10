@@ -8,6 +8,12 @@
 
 #import "AppDelegate.h"
 
+NSString *docPath()
+{
+	NSArray *pathList = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+	return [[pathList objectAtIndex:0] stringByAppendingPathComponent:@"data.td"];
+}
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +22,44 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSArray *plist = [NSArray arrayWithContentsOfFile:docPath()];
+    if(plist)
+    {
+    	tasks = [plist mutableCopy];
+    }
+    else
+    {
+    	tasks = [[NSMutableArray alloc] init];
+    }
+
+    CGRect windowFrame = [[UIScreen mainScreen] bounds];
+    UIWindow *theWindow = [[UIWindow alloc] initWithFrame:windowFrame];
+    [self setWindow:theWindow];
+
+    CGRect tableFrame = CGRectMake(0,80,320,380);
+    CGRect fieldFrame = CGRectMake(20,40,200,31);
+    CGRect buttonFrame = CGRectMake(228,40,72,31);
+
+    taskTable = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
+    [taskTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+
+    taskField = [[UITextField alloc] initWithFrame:fieldFrame];
+    [taskField setBorderStyle:UITextborderStyleRoundedRect];
+    [taskField setPlaceholder:@"Type a task, tap Insert"];
+
+    insertButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [insertButton setFrame:buttonFrame];
+    [insertButton addTarget:self action:@selector(addTask) forControlEvents:UIControlEventTouchUpInside];
+    [insertButton setTitle:@"Insert" forState:UIControlStateNormal];
+
+    [[self window] addSubview:taskTable];
+    [[self window] addSubview:taskField];
+    [[self window] addSubview:insertButton];
+
+    [[self window] setBackgroundcolor:[UIColor whiteColor]];
+    [[self window] makeKeyAndvisible];
+
     return YES;
 }
 
