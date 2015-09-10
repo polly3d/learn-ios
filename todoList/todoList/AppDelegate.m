@@ -45,22 +45,27 @@ NSString *docPath()
     [taskTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
     taskField = [[UITextField alloc] initWithFrame:fieldFrame];
-    [taskField setBorderStyle:UITextborderStyleRoundedRect];
+    [taskField setBorderStyle:UITextBorderStyleRoundedRect];
     [taskField setPlaceholder:@"Type a task, tap Insert"];
 
     insertButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [insertButton setFrame:buttonFrame];
-    [insertButton addTarget:self action:@selector(addTask) forControlEvents:UIControlEventTouchUpInside];
+    [insertButton addTarget:self action:@selector(addTask:) forControlEvents:UIControlEventTouchUpInside];
     [insertButton setTitle:@"Insert" forState:UIControlStateNormal];
 
     [[self window] addSubview:taskTable];
     [[self window] addSubview:taskField];
     [[self window] addSubview:insertButton];
 
-    [[self window] setBackgroundcolor:[UIColor whiteColor]];
-    [[self window] makeKeyAndvisible];
+    [[self window] setBackgroundColor:[UIColor whiteColor]];
+    [[self window] makeKeyAndVisible];
 
     return YES;
+}
+
+- (void)addTask:(id)sender
+{
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
