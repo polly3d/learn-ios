@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9vy-bl-KyW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--面试工具-->
+        <scene sceneID="FBE-Cf-0gE">
+            <objects>
+                <tableViewController id="Hks-o3-ezw" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="W7v-TA-WQK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="pbR-vQ-ROr">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="yUt-Jz-R4l" style="IBUITableViewCellStyleDefault" id="h0T-mu-zqs">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h0T-mu-zqs" id="vk0-0U-dwT">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="调查" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yUt-Jz-R4l">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Ght-jb-dE6" kind="show" id="sMQ-Gz-lky"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="mgc-GW-lRR" style="IBUITableViewCellStyleDefault" id="qzg-dd-eri">
+                                        <rect key="frame" x="0.0" y="108" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qzg-dd-eri" id="6ZU-JM-WKS">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="统计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mgc-GW-lRR">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1nx-7X-HU9" kind="show" id="8PF-pw-LGE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Hks-o3-ezw" id="wrV-UM-YOY"/>
+                            <outlet property="delegate" destination="Hks-o3-ezw" id="Imr-5h-Jgo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="面试工具" id="VoT-rk-Oa3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmS-oH-7XS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2846" y="283"/>
+        </scene>
+        <!--面试结果调查-->
+        <scene sceneID="kQQ-5X-4ua">
+            <objects>
+                <viewController id="Ght-jb-dE6" customClass="InterviewQuestionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vNu-36-Mz9"/>
+                        <viewControllerLayoutGuide type="bottom" id="2jX-jo-rch"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SS8-C2-fBZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="xSZ-ur-C1Z">
+                                <rect key="frame" x="20" y="259" width="560" height="81"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入公司名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9X-id-cjR">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXm-f7-J07">
+                                        <rect key="frame" x="0.0" y="21" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seO-ZA-c6o">
+                                        <rect key="frame" x="0.0" y="51" width="60" height="30"/>
+                                        <state key="normal" title="开始答题"/>
+                                        <connections>
+                                            <segue destination="B3j-Pu-I9t" kind="show" id="4vs-TX-D1M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WXm-f7-J07" firstAttribute="leading" secondItem="xSZ-ur-C1Z" secondAttribute="leading" id="qJh-H2-TUY"/>
+                                    <constraint firstAttribute="trailing" secondItem="WXm-f7-J07" secondAttribute="trailing" id="t9L-Bf-mF3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xSZ-ur-C1Z" firstAttribute="centerY" secondItem="SS8-C2-fBZ" secondAttribute="centerY" id="biE-8U-lHe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xSZ-ur-C1Z" secondAttribute="trailing" id="p0M-gU-4rD"/>
+                            <constraint firstItem="xSZ-ur-C1Z" firstAttribute="leading" secondItem="SS8-C2-fBZ" secondAttribute="leadingMargin" id="qkx-aQ-Br9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="面试结果调查" id="Vbc-nK-K16"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRh-Oq-4ig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3552" y="44"/>
+        </scene>
+        <!--填写问卷-->
+        <scene sceneID="B0A-S0-iks">
+            <objects>
+                <viewController id="B3j-Pu-I9t" customClass="SignQuestionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dU9-AH-O6t"/>
+                        <viewControllerLayoutGuide type="bottom" id="HZ0-Ib-EkI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dJO-1n-izO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-oV-MzR">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hyv-oV-MzR" secondAttribute="trailing" constant="-20" id="3GK-Tr-pxt"/>
+                            <constraint firstItem="HZ0-Ib-EkI" firstAttribute="top" secondItem="hyv-oV-MzR" secondAttribute="bottom" id="ENx-Ow-bHg"/>
+                            <constraint firstItem="hyv-oV-MzR" firstAttribute="leading" secondItem="dJO-1n-izO" secondAttribute="leadingMargin" constant="-20" id="Ka5-L5-bRW"/>
+                            <constraint firstItem="hyv-oV-MzR" firstAttribute="top" secondItem="dU9-AH-O6t" secondAttribute="bottom" id="Ndn-rw-UAH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="填写问卷" id="nXA-1Y-KEe"/>
+                    <connections>
+                        <outlet property="containerView" destination="hyv-oV-MzR" id="aNe-O6-bog"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hW7-Gy-M9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4497" y="44"/>
+        </scene>
+        <!--面试结果统计-->
+        <scene sceneID="txR-ol-X0z">
+            <objects>
+                <viewController id="1nx-7X-HU9" customClass="StatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="owA-XO-v68"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zlc-5j-obb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yUz-kg-owf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="面试结果统计" id="MFZ-6C-TQi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPA-R5-D4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3552" y="699"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WQb-Wn-Y4n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9vy-bl-KyW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IQP-bk-fBC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hks-o3-ezw" kind="relationship" relationship="rootViewController" id="fPk-u5-hdh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRQ-af-jiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2122" y="283"/>
+        </scene>
+    </scenes>
+</document>

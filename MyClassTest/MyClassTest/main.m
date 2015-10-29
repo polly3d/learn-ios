@@ -11,7 +11,10 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+        NSMutableString *string = [NSMutableString stringWithString:@"origin"];
+        NSString *stringCopy = [string copy];
+        //[string appendString:@"hello"];
+        NSLog(@"%@",stringCopy);
     }
     return 0;
 }
