@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<integer>2</integer>
+		<key>createAt</key>
+		<string>13:32</string>
+		<key>vip</key>
+		<string>vip.png</string>
+		<key>profileImageURL</key>
+		<string>w2.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>这是我们自定义Cell这个例子的核心，自定义Cell分为两个步骤：首先要进行各种控件的初始化工作，这个过程中只要将控件放到Cell的View中同时设置控件显示内容的格式（字体大小、颜色等）即可；然后在数据对象设置方法中进行各个控件的布局（大小、位置）。在代码中有几点需要重点提示大家</string>
+		<key>userName</key>
+		<string>王二</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>1</integer>
+		<key>createAt</key>
+		<string>8:23</string>
+		<key>vip</key>
+		<string>vip.png</string>
+		<key>profileImageURL</key>
+		<string>w1.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>在前面的内容中我们的数据都是手动构建的，在实际开发中自然不会这么做，这里我们不妨将微博数据存储到plist文件中然后从plist文件读取数据构建模型对象（实际开发微博当然需要进行网络数据请求，这里只是进行模拟就不再演示网络请求的内容）。</string>
+		<key>userName</key>
+		<string>小冰</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>2</integer>
+		<key>createAt</key>
+		<string>13:32</string>
+		<key>vip</key>
+		<string>vip.png</string>
+		<key>profileImageURL</key>
+		<string>w2.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>这是我们自定义Cell这个例子的核心，自定义Cell分为两个步骤：首先要进行各种控件的初始化工作，这个过程中只要将控件放到Cell的View中同时设置控件显示内容的格式（字体大小、颜色等）即可；然后在数据对象设置方法中进行各个控件的布局（大小、位置）。在代码中有几点需要重点提示大家</string>
+		<key>userName</key>
+		<string>王二</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>3</integer>
+		<key>createAt</key>
+		<string>18:23</string>
+		<key>vip</key>
+		<string>vip.png</string>
+		<key>profileImageURL</key>
+		<string>w3.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>这个类中需要重点强调一下：Cell的高度需要重新设置（前面说过无论Cell内部设置多高都没有用，需要重新设置），这里采用的方法是首先创建对应的Cell，然后在- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;方法中设置微博数据计算高度通知UITableView。</string>
+		<key>userName</key>
+		<string>王二</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>1</integer>
+		<key>createAt</key>
+		<string>8:23</string>
+		<key>vip</key>
+		<string>vip.png</string>
+		<key>profileImageURL</key>
+		<string>w1.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>在前面的内容中我们的数据都是手动构建的，在实际开发中自然不会这么做，这里我们不妨将微博数据存储到plist文件中然后从plist文件读取数据构建模型对象（实际开发微博当然需要进行网络数据请求，这里只是进行模拟就不再演示网络请求的内容）。</string>
+		<key>userName</key>
+		<string>小冰</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>2</integer>
+		<key>createAt</key>
+		<string>13:32</string>
+		<key>vip</key>
+		<string>vip.png</string>
+		<key>profileImageURL</key>
+		<string>w2.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>这是我们自定义Cell这个例子的核心，自定义Cell分为两个步骤：首先要进行各种控件的初始化工作，这个过程中只要将控件放到Cell的View中同时设置控件显示内容的格式（字体大小、颜色等）即可；然后在数据对象设置方法中进行各个控件的布局（大小、位置）。在代码中有几点需要重点提示大家</string>
+		<key>userName</key>
+		<string>王二</string>
+	</dict>
+</array>
+</plist>
