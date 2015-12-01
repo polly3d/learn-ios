@@ -1,26 +1,28 @@
 //
-//  ContactViewController.m
+//  BaseContactViewController.m
 //  myUITest
 //
-//  Created by wang on 15/11/25.
+//  Created by wang on 15/12/1.
 //  Copyright © 2015年 wang. All rights reserved.
 //
 
-#import "ContactViewController.h"
+#import "BaseContactViewController.h"
 #import "Contact.h"
 #import "ContactGroup.h"
-
 #define ToolBarHeight 44
 
-@interface ContactViewController ()
+@interface BaseContactViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UIToolbar *_toolbar;
-    BOOL _isInsert;
 }
+
+@property (nonatomic,strong) UITableView *tableView;
+
+@property (nonatomic,strong) NSMutableArray *contacts;
 
 @end
 
-@implementation ContactViewController
+@implementation BaseContactViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,7 +30,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self initData];
-    
     [self addToolBar];
     
     int maxY = CGRectGetMaxY(_toolbar.frame);
@@ -64,12 +65,6 @@
     [self.contacts addObject:group3];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 #pragma mark 添加工具栏
 - (void)addToolBar
 {
@@ -77,31 +72,13 @@
     _toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 20, frame.size.width, ToolBarHeight)];
     [self.view addSubview:_toolbar];
     
-    UIBarButtonItem *removeBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(remove)];
-    UIBarButtonItem *flexibleBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)];
     UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelBack)];
     
-    NSArray *btnArray = [NSArray arrayWithObjects:cancelBtn,removeBtn,flexibleBtn,addBtn, nil];
+    NSArray *btnArray = [NSArray arrayWithObjects:cancelBtn, nil];
     _toolbar.items = btnArray;
-    
-    
-    self.navigationItem.rightBarButtonItem = removeBtn;
-    
 }
 
-#pragma mark - UITableView常用操作
-- (void)remove
-{
-    _isInsert = NO;
-    [_tableView setEditing:!_tableView.isEditing animated:true];
-}
 
-- (void)add
-{
-    _isInsert = YES;
-    [_tableView setEditing:!_tableView.isEditing animated:YES];
-}
 
 #pragma mark - 视图切换
 - (void)cancelBack
@@ -187,97 +164,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return 40;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
-{
-    self.selectedIndexPath = indexPath;
-    ContactGroup *group = self.contacts[indexPath.section];
-    Contact *contact = group.contacts[indexPath.row];
-    
-    
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"修改号码" message:[contact getName] preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    UIAlertAction *sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-        NSString *phoneNumber = alert.textFields.firstObject.text;
-        [self changePhoneNumber:phoneNumber];
-        
-    }];
-    [alert addAction:cancel];
-    [alert addAction:sure];
-    [alert addTextFieldWithConfigurationHandler:^(UITextField *textfield){
-        textfield.text = contact.phoneNumber;
-    }];
-    [self presentViewController:alert animated:YES completion:nil];
-    
-}
-
-//- (UIStatusBarStyle)preferredStatusBarStyle
-//{
-//    return UIStatusBarStyleLightContent;
-//}
-
-- (void)changePhoneNumber:(NSString *)phoneNumber
-{
-    ContactGroup *group = self.contacts[self.selectedIndexPath.section];
-    Contact *contact = group.contacts[self.selectedIndexPath.row];
-    contact.phoneNumber = phoneNumber;
-    NSArray *indexPaths = @[self.selectedIndexPath];
-    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
-}
-
-#pragma mark 排序
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
-{
-    ContactGroup *sourceGroup = self.contacts[sourceIndexPath.section];
-    Contact *sourctContact = sourceGroup.contacts[sourceIndexPath.row];
-    ContactGroup *targetGroup = self.contacts[destinationIndexPath.section];
-    [sourceGroup.contacts removeObject:sourctContact];
-    
-    if(sourceGroup.contacts.count == 0)
-    {
-        [self.contacts removeObject:sourceGroup];
-        [tableView reloadData];
-    }
-    
-    [targetGroup.contacts insertObject:sourctContact atIndex:destinationIndexPath.row];
-}
-
-#pragma mark 取得当前操作状态，根据不同状态左侧出现不同操作按钮
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if(_isInsert)
-    {
-        return UITableViewCellEditingStyleInsert;
-    }
-    return UITableViewCellEditingStyleDelete;
-}
-
-#pragma mark 左滑显示删除或添加
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(nonnull NSIndexPath *)indexPath
-{
-    ContactGroup *group = self.contacts[indexPath.section];
-    Contact *contact = group.contacts[indexPath.row];
-    if(editingStyle == UITableViewCellEditingStyleDelete)
-    {
-        [group.contacts removeObject:contact];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
-        
-        if(group.contacts.count == 0)
-        {
-            [self.contacts removeObject:group];
-            [tableView reloadData];
-        }
-    }
-    else if(editingStyle == UITableViewCellEditingStyleInsert)
-    {
-        Contact *newContact = [[Contact alloc] init];
-        newContact.firstName = @"fisrt";
-        newContact.lastName = @"last";
-        newContact.phoneNumber = @"110";
-        [group.contacts insertObject:newContact atIndex:indexPath.row];
-        [tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
-    }
 }
 
 @end

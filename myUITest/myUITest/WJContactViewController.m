@@ -7,6 +7,9 @@
 //
 
 #import "WJContactViewController.h"
+#import "BaseContactViewController.h"
+#import "ContactViewController.h"
+#import "SearchContactViewController.h"
 
 @interface WJContactViewController ()
 {
@@ -45,17 +48,20 @@
 
 - (void)showBaseTableView
 {
-    NSLog(@"base");
+    BaseContactViewController *ctrl = [[BaseContactViewController alloc] init];
+    [self presentViewController:ctrl animated:YES completion:nil];
 }
 
 - (void)showOparationTableView
 {
-    NSLog(@"show operation");
+    ContactViewController *ctrl = [[ContactViewController alloc] init];
+    [self presentViewController:ctrl animated:YES completion:nil];
 }
 
 - (void)showSearchTableView
 {
-    NSLog(@"show search");
+    SearchContactViewController *ctrl = [[SearchContactViewController alloc] init];
+    [self presentViewController:ctrl animated:YES completion:nil];
 }
 
 #pragma mark 创建按钮对象
