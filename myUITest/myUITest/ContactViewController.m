@@ -10,7 +10,12 @@
 #import "Contact.h"
 #import "ContactGroup.h"
 
+#define ToolBarHeight 44
+
 @interface ContactViewController ()
+{
+    UIToolbar *_toolbar;
+}
 
 @end
 
@@ -25,6 +30,7 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
+    [self addToolBar];
 }
 
 - (void)initData
@@ -54,6 +60,37 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark 添加工具栏
+- (void)addToolBar
+{
+    CGRect frame = self.view.frame;
+    _toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, ToolBarHeight)];
+    [self.view addSubview:_toolbar];
+    
+    UIBarButtonItem *removeBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(remove)];
+    UIBarButtonItem *flexibleBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)];
+    
+    NSArray *btnArray = [NSArray arrayWithObjects:removeBtn,flexibleBtn,addBtn, nil];
+    _toolbar.items = btnArray;
+    
+    
+    self.navigationItem.rightBarButtonItem = removeBtn;
+    
+}
+
+#pragma mark - UITableView常用操作
+- (void)remove
+{
+    [_tableView setEditing:!_tableView.isEditing animated:true];
+}
+
+- (void)add
+{
+    
 }
 
 #pragma mark - 数据源方法
@@ -142,11 +179,20 @@
     ContactGroup *group = self.contacts[indexPath.section];
     Contact *contact = group.contacts[indexPath.row];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"system info" message:[contact getName] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
-    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
-    UITextField *txt = [alert textFieldAtIndex:0];
-    txt.text = contact.phoneNumber;
-    [alert show];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"修改号码" message:[contact getName] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *sure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        NSString *phoneNumber = alert.textFields.firstObject.text;
+        [self changePhoneNumber:phoneNumber];
+        
+    }];
+    [alert addAction:cancel];
+    [alert addAction:sure];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textfield){
+        textfield.text = contact.phoneNumber;
+    }];
+    [self presentViewController:alert animated:YES completion:nil];
     
 }
 
@@ -155,20 +201,13 @@
     return UIStatusBarStyleLightContent;
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)changePhoneNumber:(NSString *)phoneNumber
 {
-    if(buttonIndex == 1)
-    {
-        UITextField *txt = [alertView textFieldAtIndex:0];
-        ContactGroup *group = self.contacts[self.selectedIndexPath.section];
-        Contact *contact = group.contacts[self.selectedIndexPath.row];
-        contact.phoneNumber = txt.text;
-        
-        //刷新表格
-        NSArray *indexPaths = @[self.selectedIndexPath];
-        [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
-    }
+    ContactGroup *group = self.contacts[self.selectedIndexPath.section];
+    Contact *contact = group.contacts[self.selectedIndexPath.row];
+    contact.phoneNumber = phoneNumber;
+    NSArray *indexPaths = @[self.selectedIndexPath];
+    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
 }
-
 
 @end

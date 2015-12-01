@@ -11,6 +11,10 @@
 		2100F1B21C0567790050CEFF /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100F1B11C0567790050CEFF /* Contact.m */; };
 		2100F1B51C0569470050CEFF /* ContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100F1B41C0569470050CEFF /* ContactGroup.m */; };
 		2100F1B81C056AC40050CEFF /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100F1B71C056AC40050CEFF /* ContactViewController.m */; };
+		2178E1971C0C7FFF003D245F /* PhotoGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2178E1961C0C7FFF003D245F /* PhotoGestureViewController.m */; };
+		2187370E1C0A96FE0013B0E7 /* WJContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187370D1C0A96FE0013B0E7 /* WJContactViewController.m */; };
+		21C4B7C61C0BE318002A4DFF /* MyPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C4B7C51C0BE318002A4DFF /* MyPopViewController.m */; };
+		21C4B7CA1C0BE713002A4DFF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C4B7C91C0BE713002A4DFF /* LoginViewController.m */; };
 		21C862821C04387F00FBC3D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C862811C04387F00FBC3D0 /* main.m */; };
 		21C862851C04387F00FBC3D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C862841C04387F00FBC3D0 /* AppDelegate.m */; };
 		21C8628B1C04387F00FBC3D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C862891C04387F00FBC3D0 /* Main.storyboard */; };
@@ -19,6 +23,13 @@
 		21C8629B1C04388000FBC3D0 /* myUITestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C8629A1C04388000FBC3D0 /* myUITestTests.m */; };
 		21C862A71C0446BB00FBC3D0 /* PicScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C862A61C0446BB00FBC3D0 /* PicScrollViewController.m */; };
 		21C862AA1C04476600FBC3D0 /* imageInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C862A91C04476600FBC3D0 /* imageInfo.plist */; };
+		21EE61BC1C0C997300EE9EB1 /* TouchEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE61BB1C0C997300EE9EB1 /* TouchEventViewController.m */; };
+		21EE61BF1C0C9AA300EE9EB1 /* MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE61BE1C0C9AA300EE9EB1 /* MyImage.m */; };
+		21EE61C21C0CA5CC00EE9EB1 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE61C11C0CA5CC00EE9EB1 /* ShakeViewController.m */; };
+		21F846B41C0D3B5B00D8258A /* QuartzMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F846B31C0D3B5B00D8258A /* QuartzMainViewController.m */; };
+		21F846B71C0D3F9600D8258A /* QuartzItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F846B61C0D3F9600D8258A /* QuartzItem.m */; };
+		21F846BA1C0D418500D8258A /* BaseDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F846B91C0D418500D8258A /* BaseDrawViewController.m */; };
+		21F94EBF1C0D8C7F00ABD56A /* BaseDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F94EBE1C0D8C7F00ABD56A /* BaseDrawView.m */; };
 		21FE203E1C069781007B6A3B /* weiboData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21FE203D1C069781007B6A3B /* weiboData.plist */; };
 		21FE20491C06A0F3007B6A3B /* WeiboData.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE20481C06A0F3007B6A3B /* WeiboData.m */; };
 		21FE204C1C06A2DF007B6A3B /* WeiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE204B1C06A2DF007B6A3B /* WeiBoViewController.m */; };
@@ -44,6 +55,14 @@
 		2100F1B41C0569470050CEFF /* ContactGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactGroup.m; sourceTree = "<group>"; };
 		2100F1B61C056AC40050CEFF /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		2100F1B71C056AC40050CEFF /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		2178E1951C0C7FFF003D245F /* PhotoGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoGestureViewController.h; sourceTree = "<group>"; };
+		2178E1961C0C7FFF003D245F /* PhotoGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoGestureViewController.m; sourceTree = "<group>"; };
+		2187370C1C0A96FE0013B0E7 /* WJContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJContactViewController.h; sourceTree = "<group>"; };
+		2187370D1C0A96FE0013B0E7 /* WJContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJContactViewController.m; sourceTree = "<group>"; };
+		21C4B7C41C0BE318002A4DFF /* MyPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPopViewController.h; sourceTree = "<group>"; };
+		21C4B7C51C0BE318002A4DFF /* MyPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPopViewController.m; sourceTree = "<group>"; };
+		21C4B7C81C0BE713002A4DFF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		21C4B7C91C0BE713002A4DFF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		21C8627D1C04387F00FBC3D0 /* myUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C862811C04387F00FBC3D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21C862831C04387F00FBC3D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +77,20 @@
 		21C862A51C0446BB00FBC3D0 /* PicScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicScrollViewController.h; sourceTree = "<group>"; };
 		21C862A61C0446BB00FBC3D0 /* PicScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicScrollViewController.m; sourceTree = "<group>"; };
 		21C862A91C04476600FBC3D0 /* imageInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageInfo.plist; sourceTree = "<group>"; };
+		21EE61BA1C0C997300EE9EB1 /* TouchEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventViewController.h; sourceTree = "<group>"; };
+		21EE61BB1C0C997300EE9EB1 /* TouchEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventViewController.m; sourceTree = "<group>"; };
+		21EE61BD1C0C9AA300EE9EB1 /* MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImage.h; sourceTree = "<group>"; };
+		21EE61BE1C0C9AA300EE9EB1 /* MyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImage.m; sourceTree = "<group>"; };
+		21EE61C01C0CA5CC00EE9EB1 /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
+		21EE61C11C0CA5CC00EE9EB1 /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		21F846B21C0D3B5B00D8258A /* QuartzMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzMainViewController.h; sourceTree = "<group>"; };
+		21F846B31C0D3B5B00D8258A /* QuartzMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzMainViewController.m; sourceTree = "<group>"; };
+		21F846B51C0D3F9600D8258A /* QuartzItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzItem.h; sourceTree = "<group>"; };
+		21F846B61C0D3F9600D8258A /* QuartzItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzItem.m; sourceTree = "<group>"; };
+		21F846B81C0D418500D8258A /* BaseDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDrawViewController.h; sourceTree = "<group>"; };
+		21F846B91C0D418500D8258A /* BaseDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawViewController.m; sourceTree = "<group>"; };
+		21F94EBD1C0D8C7F00ABD56A /* BaseDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDrawView.h; sourceTree = "<group>"; };
+		21F94EBE1C0D8C7F00ABD56A /* BaseDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawView.m; sourceTree = "<group>"; };
 		21FE203D1C069781007B6A3B /* weiboData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = weiboData.plist; sourceTree = "<group>"; };
 		21FE20471C06A0F3007B6A3B /* WeiboData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboData.h; sourceTree = "<group>"; };
 		21FE20481C06A0F3007B6A3B /* WeiboData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboData.m; sourceTree = "<group>"; };
@@ -96,8 +129,41 @@
 				21FE203D1C069781007B6A3B /* weiboData.plist */,
 				21FE20471C06A0F3007B6A3B /* WeiboData.h */,
 				21FE20481C06A0F3007B6A3B /* WeiboData.m */,
+				21F846B51C0D3F9600D8258A /* QuartzItem.h */,
+				21F846B61C0D3F9600D8258A /* QuartzItem.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		2178E1901C0C7F04003D245F /* contact */ = {
+			isa = PBXGroup;
+			children = (
+				2100F1B61C056AC40050CEFF /* ContactViewController.h */,
+				2100F1B71C056AC40050CEFF /* ContactViewController.m */,
+			);
+			name = contact;
+			sourceTree = "<group>";
+		};
+		2178E1911C0C7F50003D245F /* gesture */ = {
+			isa = PBXGroup;
+			children = (
+				2178E1951C0C7FFF003D245F /* PhotoGestureViewController.h */,
+				2178E1961C0C7FFF003D245F /* PhotoGestureViewController.m */,
+				21EE61BA1C0C997300EE9EB1 /* TouchEventViewController.h */,
+				21EE61BB1C0C997300EE9EB1 /* TouchEventViewController.m */,
+				21EE61C01C0CA5CC00EE9EB1 /* ShakeViewController.h */,
+				21EE61C11C0CA5CC00EE9EB1 /* ShakeViewController.m */,
+			);
+			name = gesture;
+			sourceTree = "<group>";
+		};
+		21C4B7C71C0BE6F4002A4DFF /* myPop */ = {
+			isa = PBXGroup;
+			children = (
+				21C4B7C81C0BE713002A4DFF /* LoginViewController.h */,
+				21C4B7C91C0BE713002A4DFF /* LoginViewController.m */,
+			);
+			name = myPop;
 			sourceTree = "<group>";
 		};
 		21C862741C04387F00FBC3D0 = {
@@ -155,16 +221,43 @@
 		21C862A81C0446D000FBC3D0 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				21F846AE1C0D3A4E00D8258A /* Quartz */,
+				2178E1911C0C7F50003D245F /* gesture */,
+				2178E1901C0C7F04003D245F /* contact */,
+				21C4B7C71C0BE6F4002A4DFF /* myPop */,
 				21C862A51C0446BB00FBC3D0 /* PicScrollViewController.h */,
 				21C862A61C0446BB00FBC3D0 /* PicScrollViewController.m */,
 				2100F1AC1C0561450050CEFF /* SinglePicViewController.h */,
 				2100F1AD1C0561450050CEFF /* SinglePicViewController.m */,
-				2100F1B61C056AC40050CEFF /* ContactViewController.h */,
-				2100F1B71C056AC40050CEFF /* ContactViewController.m */,
 				21FE204A1C06A2DF007B6A3B /* WeiBoViewController.h */,
 				21FE204B1C06A2DF007B6A3B /* WeiBoViewController.m */,
+				21C4B7C41C0BE318002A4DFF /* MyPopViewController.h */,
+				21C4B7C51C0BE318002A4DFF /* MyPopViewController.m */,
+				2187370C1C0A96FE0013B0E7 /* WJContactViewController.h */,
+				2187370D1C0A96FE0013B0E7 /* WJContactViewController.m */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		21F846AE1C0D3A4E00D8258A /* Quartz */ = {
+			isa = PBXGroup;
+			children = (
+				21F94EBC1C0D8C5C00ABD56A /* view */,
+				21F846B21C0D3B5B00D8258A /* QuartzMainViewController.h */,
+				21F846B31C0D3B5B00D8258A /* QuartzMainViewController.m */,
+				21F846B81C0D418500D8258A /* BaseDrawViewController.h */,
+				21F846B91C0D418500D8258A /* BaseDrawViewController.m */,
+			);
+			name = Quartz;
+			sourceTree = "<group>";
+		};
+		21F94EBC1C0D8C5C00ABD56A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				21F94EBD1C0D8C7F00ABD56A /* BaseDrawView.h */,
+				21F94EBE1C0D8C7F00ABD56A /* BaseDrawView.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		21FE204D1C06A396007B6A3B /* view */ = {
@@ -172,6 +265,8 @@
 			children = (
 				21FE204E1C06A3BE007B6A3B /* WeiboTableViewCell.h */,
 				21FE204F1C06A3BE007B6A3B /* WeiboTableViewCell.m */,
+				21EE61BD1C0C9AA300EE9EB1 /* MyImage.h */,
+				21EE61BE1C0C9AA300EE9EB1 /* MyImage.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -281,13 +376,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FE204C1C06A2DF007B6A3B /* WeiBoViewController.m in Sources */,
+				21EE61BC1C0C997300EE9EB1 /* TouchEventViewController.m in Sources */,
+				21F846B71C0D3F9600D8258A /* QuartzItem.m in Sources */,
 				2100F1B81C056AC40050CEFF /* ContactViewController.m in Sources */,
+				21C4B7CA1C0BE713002A4DFF /* LoginViewController.m in Sources */,
 				21C862851C04387F00FBC3D0 /* AppDelegate.m in Sources */,
+				2187370E1C0A96FE0013B0E7 /* WJContactViewController.m in Sources */,
+				21C4B7C61C0BE318002A4DFF /* MyPopViewController.m in Sources */,
 				2100F1AE1C0561450050CEFF /* SinglePicViewController.m in Sources */,
 				21FE20501C06A3BE007B6A3B /* WeiboTableViewCell.m in Sources */,
 				2100F1B21C0567790050CEFF /* Contact.m in Sources */,
+				21F846BA1C0D418500D8258A /* BaseDrawViewController.m in Sources */,
+				21EE61C21C0CA5CC00EE9EB1 /* ShakeViewController.m in Sources */,
+				2178E1971C0C7FFF003D245F /* PhotoGestureViewController.m in Sources */,
+				21F94EBF1C0D8C7F00ABD56A /* BaseDrawView.m in Sources */,
+				21F846B41C0D3B5B00D8258A /* QuartzMainViewController.m in Sources */,
 				21C862A71C0446BB00FBC3D0 /* PicScrollViewController.m in Sources */,
 				2100F1B51C0569470050CEFF /* ContactGroup.m in Sources */,
+				21EE61BF1C0C9AA300EE9EB1 /* MyImage.m in Sources */,
 				21FE20491C06A0F3007B6A3B /* WeiboData.m in Sources */,
 				21C862821C04387F00FBC3D0 /* main.m in Sources */,
 			);
