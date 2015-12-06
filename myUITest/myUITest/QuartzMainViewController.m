@@ -25,7 +25,13 @@
 {
     QuartzItem *item1 = [[QuartzItem alloc] initWithItemName:@"基本图形绘制" className:@"BaseDrawViewController"];
     
-    self.controllersData = [NSArray arrayWithObjects:item1, nil];
+    QuartzItem *item2 = [[QuartzItem alloc] initWithItemName:@"视图刷新" className:@"RefreshViewController"];
+    
+    QuartzItem *item3 = [[QuartzItem alloc] initWithItemName:@"添加水印" className:@"DrawToImageViewController"];
+    
+    QuartzItem *item4 = [[QuartzItem alloc] initWithItemName:@"简易美图秀秀" className:@"MeiTuViewController"];
+    
+    self.controllersData = [NSArray arrayWithObjects:item1, item2,item3,item4,nil];
 }
 
 - (void)initUI

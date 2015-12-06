@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     _img = [[MyImage alloc] initWithFrame:CGRectMake(50, 120, 150, 150)];
     _img.userInteractionEnabled = YES;
     [self.view addSubview:_img];

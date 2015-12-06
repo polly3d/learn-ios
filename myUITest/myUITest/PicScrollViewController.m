@@ -35,6 +35,8 @@
     //解决vc里面第一个scrollview偏移64个点的问题
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self loadData];
     [self addScrollView];
     [self addImgView];

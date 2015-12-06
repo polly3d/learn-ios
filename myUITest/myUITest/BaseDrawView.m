@@ -12,6 +12,7 @@
 
 - (void)drawRect:(CGRect)rect
 {
+    CGContextRef context = UIGraphicsGetCurrentContext();
     //[self drawLine];
     [self drawLineSimple];
     [self drawRectByDefault];
@@ -20,6 +21,9 @@
     [self drawCurve];
     [self drawText];
     //[self drawImage];
+    //[self drawLinearGradient:context];
+    //[self drawRadialGradient:context];
+    [self drawRectWithLinearGradientFill:context];
 }
 
 #pragma mark 画线
@@ -108,8 +112,8 @@
 - (void)drawArc
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextAddArc(context, 160, 160, 100, 0, M_PI_2, 1);
-    [[UIColor yellowColor] set];
+    CGContextAddArc(context, 160, 160, 100, 10,20, 1);
+    [[UIColor greenColor] set];
     CGContextDrawPath(context, kCGPathFillStroke);
 }
 
@@ -157,5 +161,59 @@
 //    [image drawAsPatternInRect:CGRectMake(0, 0, 320, 568)];
 }
 
+#pragma mark 线性渐变
+- (void)drawLinearGradient:(CGContextRef)context
+{
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    
+    CGFloat components[12] = {
+        248.0/255.0,86.0/255.0,86.0/255.0,1,
+        249.0/255.0,127.0/255.0,127.0/255.0,1,
+        1.0,1.0,1.0,1.0
+    };
+    CGFloat locations[3] = {0,0.3,1.0};
+    
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, components, locations, 3);
+    
+    CGContextDrawLinearGradient(context, gradient, CGPointZero, CGPointMake(320, 300), kCGGradientDrawsAfterEndLocation);
+    CGColorSpaceRelease(colorSpace);
+}
+
+#pragma mark 径向渐变
+- (void)drawRadialGradient:(CGContextRef)context
+{
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    
+    CGFloat components[12] =
+    {
+        248.0/255.0,86.0/255.0,86.0/255.0,1,
+        249.0/255.0,127.0/255.0,127.0/255.0,1,
+        1.0,1.0,1.0,1.0
+    };
+    CGFloat locations[3] = {0,0.3,1.0};
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, components, locations, 3);
+    CGContextDrawRadialGradient(context, gradient, CGPointMake(160, 284), 0, CGPointMake(165, 289), 150, kCGGradientDrawsAfterEndLocation);
+    CGColorSpaceRelease(colorSpace);
+}
+
+#pragma mark 渐变填充
+- (void)drawRectWithLinearGradientFill:(CGContextRef)context
+{
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    
+    UIRectClip(CGRectMake(20, 200, 200, 300));
+    
+    CGFloat components[12] = {
+        248.0/255.0,86.0/255.0,86.0/255.0,1,
+        249.0/255.0,127.0/255.0,127.0/255.0,1,
+        1.0,1.0,1.0,1.0
+    };
+    CGFloat locations[3] = {0,0.3,1.0};
+    
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, components, locations, 3);
+    
+    CGContextDrawLinearGradient(context, gradient, CGPointZero, CGPointMake(320, 300), kCGGradientDrawsAfterEndLocation);
+    CGColorSpaceRelease(colorSpace);
+}
 
 @end

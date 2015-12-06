@@ -11,6 +11,11 @@
 		2100F1B21C0567790050CEFF /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100F1B11C0567790050CEFF /* Contact.m */; };
 		2100F1B51C0569470050CEFF /* ContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100F1B41C0569470050CEFF /* ContactGroup.m */; };
 		2100F1B81C056AC40050CEFF /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2100F1B71C056AC40050CEFF /* ContactViewController.m */; };
+		212293EB1C103CC400F3DB0B /* CustomLayerDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212293EA1C103CC400F3DB0B /* CustomLayerDrawViewController.m */; };
+		212293EF1C103E0300F3DB0B /* MyLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 212293EE1C103E0300F3DB0B /* MyLayer.m */; };
+		212293F21C103EDB00F3DB0B /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212293F11C103EDB00F3DB0B /* CustomView.m */; };
+		212293F61C10443A00F3DB0B /* BaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212293F51C10443A00F3DB0B /* BaseAnimationViewController.m */; };
+		215ACF9C1C0F37C800EAEF71 /* MeiTuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215ACF9B1C0F37C800EAEF71 /* MeiTuViewController.m */; };
 		2178E1971C0C7FFF003D245F /* PhotoGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2178E1961C0C7FFF003D245F /* PhotoGestureViewController.m */; };
 		2187370E1C0A96FE0013B0E7 /* WJContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187370D1C0A96FE0013B0E7 /* WJContactViewController.m */; };
 		21C4B7C61C0BE318002A4DFF /* MyPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C4B7C51C0BE318002A4DFF /* MyPopViewController.m */; };
@@ -23,19 +28,35 @@
 		21C8629B1C04388000FBC3D0 /* myUITestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C8629A1C04388000FBC3D0 /* myUITestTests.m */; };
 		21C862A71C0446BB00FBC3D0 /* PicScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C862A61C0446BB00FBC3D0 /* PicScrollViewController.m */; };
 		21C862AA1C04476600FBC3D0 /* imageInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C862A91C04476600FBC3D0 /* imageInfo.plist */; };
+		21EBEAB01C0EC40D007AA574 /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EBEAAF1C0EC40D007AA574 /* RefreshViewController.m */; };
+		21EBEAB31C0EC4F0007AA574 /* RefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EBEAB21C0EC4F0007AA574 /* RefreshView.m */; };
+		21EBEAB61C0EC9C3007AA574 /* DrawToImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EBEAB51C0EC9C3007AA574 /* DrawToImageViewController.m */; };
 		21EE61BC1C0C997300EE9EB1 /* TouchEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE61BB1C0C997300EE9EB1 /* TouchEventViewController.m */; };
 		21EE61BF1C0C9AA300EE9EB1 /* MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE61BE1C0C9AA300EE9EB1 /* MyImage.m */; };
 		21EE61C21C0CA5CC00EE9EB1 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EE61C11C0CA5CC00EE9EB1 /* ShakeViewController.m */; };
 		21F0E5B61C0DE1E0006209E1 /* BaseContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F0E5B51C0DE1E0006209E1 /* BaseContactViewController.m */; };
 		21F0E5B91C0DE5E1006209E1 /* SearchContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F0E5B81C0DE5E1006209E1 /* SearchContactViewController.m */; };
+		21F6A66D1C0FF291004BA8AD /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6A66C1C0FF291004BA8AD /* MainTableViewController.m */; };
+		21F6A6701C0FF308004BA8AD /* MainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6A66F1C0FF308004BA8AD /* MainItem.m */; };
 		21F846B41C0D3B5B00D8258A /* QuartzMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F846B31C0D3B5B00D8258A /* QuartzMainViewController.m */; };
 		21F846B71C0D3F9600D8258A /* QuartzItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F846B61C0D3F9600D8258A /* QuartzItem.m */; };
 		21F846BA1C0D418500D8258A /* BaseDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F846B91C0D418500D8258A /* BaseDrawViewController.m */; };
+		21F8F7321C1024790097474E /* BaseLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F8F7311C1024790097474E /* BaseLayerViewController.m */; };
+		21F8F7351C1024A90097474E /* AnimationMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F8F7341C1024A90097474E /* AnimationMainTableViewController.m */; };
+		21F8F7391C102B0B0097474E /* DrawWithLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F8F7381C102B0B0097474E /* DrawWithLayerViewController.m */; };
 		21F94EBF1C0D8C7F00ABD56A /* BaseDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F94EBE1C0D8C7F00ABD56A /* BaseDrawView.m */; };
+		21FC8ADE1C117BDA001D98DE /* KeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FC8ADD1C117BDA001D98DE /* KeyframeAnimationViewController.m */; };
+		21FC8AE11C11811A001D98DE /* GroupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FC8AE01C11811A001D98DE /* GroupAnimationViewController.m */; };
 		21FE203E1C069781007B6A3B /* weiboData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21FE203D1C069781007B6A3B /* weiboData.plist */; };
 		21FE20491C06A0F3007B6A3B /* WeiboData.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE20481C06A0F3007B6A3B /* WeiboData.m */; };
 		21FE204C1C06A2DF007B6A3B /* WeiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE204B1C06A2DF007B6A3B /* WeiBoViewController.m */; };
 		21FE20501C06A3BE007B6A3B /* WeiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE204F1C06A3BE007B6A3B /* WeiboTableViewCell.m */; };
+		21FE3B241C131DA300BFC768 /* TransitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE3B231C131DA300BFC768 /* TransitionAnimationViewController.m */; };
+		21FE3B271C1322BB00BFC768 /* FrameByFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE3B261C1322BB00BFC768 /* FrameByFrameViewController.m */; };
+		21FE3B2A1C1328A800BFC768 /* MyUIViewBaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE3B291C1328A800BFC768 /* MyUIViewBaseAnimationViewController.m */; };
+		21FE3B2D1C1328D700BFC768 /* MyUIViewBallAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE3B2C1C1328D700BFC768 /* MyUIViewBallAnimationViewController.m */; };
+		21FE3B301C1328F200BFC768 /* MyUIViewKeyFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE3B2F1C1328F200BFC768 /* MyUIViewKeyFrameAnimationViewController.m */; };
+		21FE3B331C13291200BFC768 /* MyUIViewTransitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FE3B321C13291200BFC768 /* MyUIViewTransitionAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +78,16 @@
 		2100F1B41C0569470050CEFF /* ContactGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactGroup.m; sourceTree = "<group>"; };
 		2100F1B61C056AC40050CEFF /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		2100F1B71C056AC40050CEFF /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		212293E91C103CC400F3DB0B /* CustomLayerDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayerDrawViewController.h; sourceTree = "<group>"; };
+		212293EA1C103CC400F3DB0B /* CustomLayerDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayerDrawViewController.m; sourceTree = "<group>"; };
+		212293ED1C103E0300F3DB0B /* MyLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayer.h; sourceTree = "<group>"; };
+		212293EE1C103E0300F3DB0B /* MyLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayer.m; sourceTree = "<group>"; };
+		212293F01C103EDB00F3DB0B /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		212293F11C103EDB00F3DB0B /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		212293F41C10443A00F3DB0B /* BaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimationViewController.h; sourceTree = "<group>"; };
+		212293F51C10443A00F3DB0B /* BaseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimationViewController.m; sourceTree = "<group>"; };
+		215ACF9A1C0F37C800EAEF71 /* MeiTuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeiTuViewController.h; sourceTree = "<group>"; };
+		215ACF9B1C0F37C800EAEF71 /* MeiTuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeiTuViewController.m; sourceTree = "<group>"; };
 		2178E1951C0C7FFF003D245F /* PhotoGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoGestureViewController.h; sourceTree = "<group>"; };
 		2178E1961C0C7FFF003D245F /* PhotoGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoGestureViewController.m; sourceTree = "<group>"; };
 		2187370C1C0A96FE0013B0E7 /* WJContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJContactViewController.h; sourceTree = "<group>"; };
@@ -79,6 +110,12 @@
 		21C862A51C0446BB00FBC3D0 /* PicScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicScrollViewController.h; sourceTree = "<group>"; };
 		21C862A61C0446BB00FBC3D0 /* PicScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicScrollViewController.m; sourceTree = "<group>"; };
 		21C862A91C04476600FBC3D0 /* imageInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageInfo.plist; sourceTree = "<group>"; };
+		21EBEAAE1C0EC40D007AA574 /* RefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
+		21EBEAAF1C0EC40D007AA574 /* RefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshViewController.m; sourceTree = "<group>"; };
+		21EBEAB11C0EC4F0007AA574 /* RefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshView.h; sourceTree = "<group>"; };
+		21EBEAB21C0EC4F0007AA574 /* RefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshView.m; sourceTree = "<group>"; };
+		21EBEAB41C0EC9C3007AA574 /* DrawToImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawToImageViewController.h; sourceTree = "<group>"; };
+		21EBEAB51C0EC9C3007AA574 /* DrawToImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawToImageViewController.m; sourceTree = "<group>"; };
 		21EE61BA1C0C997300EE9EB1 /* TouchEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventViewController.h; sourceTree = "<group>"; };
 		21EE61BB1C0C997300EE9EB1 /* TouchEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventViewController.m; sourceTree = "<group>"; };
 		21EE61BD1C0C9AA300EE9EB1 /* MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImage.h; sourceTree = "<group>"; };
@@ -89,14 +126,28 @@
 		21F0E5B51C0DE1E0006209E1 /* BaseContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseContactViewController.m; sourceTree = "<group>"; };
 		21F0E5B71C0DE5E1006209E1 /* SearchContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchContactViewController.h; sourceTree = "<group>"; };
 		21F0E5B81C0DE5E1006209E1 /* SearchContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchContactViewController.m; sourceTree = "<group>"; };
+		21F6A66B1C0FF291004BA8AD /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		21F6A66C1C0FF291004BA8AD /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		21F6A66E1C0FF308004BA8AD /* MainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainItem.h; sourceTree = "<group>"; };
+		21F6A66F1C0FF308004BA8AD /* MainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainItem.m; sourceTree = "<group>"; };
 		21F846B21C0D3B5B00D8258A /* QuartzMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzMainViewController.h; sourceTree = "<group>"; };
 		21F846B31C0D3B5B00D8258A /* QuartzMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzMainViewController.m; sourceTree = "<group>"; };
 		21F846B51C0D3F9600D8258A /* QuartzItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzItem.h; sourceTree = "<group>"; };
 		21F846B61C0D3F9600D8258A /* QuartzItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzItem.m; sourceTree = "<group>"; };
 		21F846B81C0D418500D8258A /* BaseDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDrawViewController.h; sourceTree = "<group>"; };
 		21F846B91C0D418500D8258A /* BaseDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawViewController.m; sourceTree = "<group>"; };
+		21F8F7301C1024790097474E /* BaseLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLayerViewController.h; sourceTree = "<group>"; };
+		21F8F7311C1024790097474E /* BaseLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLayerViewController.m; sourceTree = "<group>"; };
+		21F8F7331C1024A90097474E /* AnimationMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationMainTableViewController.h; sourceTree = "<group>"; };
+		21F8F7341C1024A90097474E /* AnimationMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationMainTableViewController.m; sourceTree = "<group>"; };
+		21F8F7371C102B0B0097474E /* DrawWithLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawWithLayerViewController.h; sourceTree = "<group>"; };
+		21F8F7381C102B0B0097474E /* DrawWithLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawWithLayerViewController.m; sourceTree = "<group>"; };
 		21F94EBD1C0D8C7F00ABD56A /* BaseDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDrawView.h; sourceTree = "<group>"; };
 		21F94EBE1C0D8C7F00ABD56A /* BaseDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawView.m; sourceTree = "<group>"; };
+		21FC8ADC1C117BD9001D98DE /* KeyframeAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyframeAnimationViewController.h; sourceTree = "<group>"; };
+		21FC8ADD1C117BDA001D98DE /* KeyframeAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyframeAnimationViewController.m; sourceTree = "<group>"; };
+		21FC8ADF1C11811A001D98DE /* GroupAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAnimationViewController.h; sourceTree = "<group>"; };
+		21FC8AE01C11811A001D98DE /* GroupAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAnimationViewController.m; sourceTree = "<group>"; };
 		21FE203D1C069781007B6A3B /* weiboData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = weiboData.plist; sourceTree = "<group>"; };
 		21FE20471C06A0F3007B6A3B /* WeiboData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboData.h; sourceTree = "<group>"; };
 		21FE20481C06A0F3007B6A3B /* WeiboData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboData.m; sourceTree = "<group>"; };
@@ -104,6 +155,18 @@
 		21FE204B1C06A2DF007B6A3B /* WeiBoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiBoViewController.m; sourceTree = "<group>"; };
 		21FE204E1C06A3BE007B6A3B /* WeiboTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboTableViewCell.h; sourceTree = "<group>"; };
 		21FE204F1C06A3BE007B6A3B /* WeiboTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboTableViewCell.m; sourceTree = "<group>"; };
+		21FE3B221C131DA300BFC768 /* TransitionAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationViewController.h; sourceTree = "<group>"; };
+		21FE3B231C131DA300BFC768 /* TransitionAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationViewController.m; sourceTree = "<group>"; };
+		21FE3B251C1322BB00BFC768 /* FrameByFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameByFrameViewController.h; sourceTree = "<group>"; };
+		21FE3B261C1322BB00BFC768 /* FrameByFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameByFrameViewController.m; sourceTree = "<group>"; };
+		21FE3B281C1328A800BFC768 /* MyUIViewBaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIViewBaseAnimationViewController.h; sourceTree = "<group>"; };
+		21FE3B291C1328A800BFC768 /* MyUIViewBaseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUIViewBaseAnimationViewController.m; sourceTree = "<group>"; };
+		21FE3B2B1C1328D700BFC768 /* MyUIViewBallAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIViewBallAnimationViewController.h; sourceTree = "<group>"; };
+		21FE3B2C1C1328D700BFC768 /* MyUIViewBallAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUIViewBallAnimationViewController.m; sourceTree = "<group>"; };
+		21FE3B2E1C1328F200BFC768 /* MyUIViewKeyFrameAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIViewKeyFrameAnimationViewController.h; sourceTree = "<group>"; };
+		21FE3B2F1C1328F200BFC768 /* MyUIViewKeyFrameAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUIViewKeyFrameAnimationViewController.m; sourceTree = "<group>"; };
+		21FE3B311C13291200BFC768 /* MyUIViewTransitionAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIViewTransitionAnimationViewController.h; sourceTree = "<group>"; };
+		21FE3B321C13291200BFC768 /* MyUIViewTransitionAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUIViewTransitionAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +200,46 @@
 				21FE20481C06A0F3007B6A3B /* WeiboData.m */,
 				21F846B51C0D3F9600D8258A /* QuartzItem.h */,
 				21F846B61C0D3F9600D8258A /* QuartzItem.m */,
+				21F6A66E1C0FF308004BA8AD /* MainItem.h */,
+				21F6A66F1C0FF308004BA8AD /* MainItem.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		212293EC1C103DD000F3DB0B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				212293ED1C103E0300F3DB0B /* MyLayer.h */,
+				212293EE1C103E0300F3DB0B /* MyLayer.m */,
+				212293F01C103EDB00F3DB0B /* CustomView.h */,
+				212293F11C103EDB00F3DB0B /* CustomView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		212293F31C10441800F3DB0B /* ani */ = {
+			isa = PBXGroup;
+			children = (
+				212293F41C10443A00F3DB0B /* BaseAnimationViewController.h */,
+				212293F51C10443A00F3DB0B /* BaseAnimationViewController.m */,
+				21FC8ADC1C117BD9001D98DE /* KeyframeAnimationViewController.h */,
+				21FC8ADD1C117BDA001D98DE /* KeyframeAnimationViewController.m */,
+				21FC8ADF1C11811A001D98DE /* GroupAnimationViewController.h */,
+				21FC8AE01C11811A001D98DE /* GroupAnimationViewController.m */,
+				21FE3B221C131DA300BFC768 /* TransitionAnimationViewController.h */,
+				21FE3B231C131DA300BFC768 /* TransitionAnimationViewController.m */,
+				21FE3B251C1322BB00BFC768 /* FrameByFrameViewController.h */,
+				21FE3B261C1322BB00BFC768 /* FrameByFrameViewController.m */,
+				21FE3B281C1328A800BFC768 /* MyUIViewBaseAnimationViewController.h */,
+				21FE3B291C1328A800BFC768 /* MyUIViewBaseAnimationViewController.m */,
+				21FE3B2B1C1328D700BFC768 /* MyUIViewBallAnimationViewController.h */,
+				21FE3B2C1C1328D700BFC768 /* MyUIViewBallAnimationViewController.m */,
+				21FE3B2E1C1328F200BFC768 /* MyUIViewKeyFrameAnimationViewController.h */,
+				21FE3B2F1C1328F200BFC768 /* MyUIViewKeyFrameAnimationViewController.m */,
+				21FE3B311C13291200BFC768 /* MyUIViewTransitionAnimationViewController.h */,
+				21FE3B321C13291200BFC768 /* MyUIViewTransitionAnimationViewController.m */,
+			);
+			name = ani;
 			sourceTree = "<group>";
 		};
 		2178E1901C0C7F04003D245F /* contact */ = {
@@ -231,6 +332,7 @@
 		21C862A81C0446D000FBC3D0 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				21F8F72F1C10245D0097474E /* animation */,
 				21F846AE1C0D3A4E00D8258A /* Quartz */,
 				2178E1911C0C7F50003D245F /* gesture */,
 				2178E1901C0C7F04003D245F /* contact */,
@@ -245,6 +347,8 @@
 				21C4B7C51C0BE318002A4DFF /* MyPopViewController.m */,
 				2187370C1C0A96FE0013B0E7 /* WJContactViewController.h */,
 				2187370D1C0A96FE0013B0E7 /* WJContactViewController.m */,
+				21F6A66B1C0FF291004BA8AD /* MainTableViewController.h */,
+				21F6A66C1C0FF291004BA8AD /* MainTableViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -257,8 +361,39 @@
 				21F846B31C0D3B5B00D8258A /* QuartzMainViewController.m */,
 				21F846B81C0D418500D8258A /* BaseDrawViewController.h */,
 				21F846B91C0D418500D8258A /* BaseDrawViewController.m */,
+				21EBEAAE1C0EC40D007AA574 /* RefreshViewController.h */,
+				21EBEAAF1C0EC40D007AA574 /* RefreshViewController.m */,
+				21EBEAB41C0EC9C3007AA574 /* DrawToImageViewController.h */,
+				21EBEAB51C0EC9C3007AA574 /* DrawToImageViewController.m */,
+				215ACF9A1C0F37C800EAEF71 /* MeiTuViewController.h */,
+				215ACF9B1C0F37C800EAEF71 /* MeiTuViewController.m */,
 			);
 			name = Quartz;
+			sourceTree = "<group>";
+		};
+		21F8F72F1C10245D0097474E /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				212293F31C10441800F3DB0B /* ani */,
+				21F8F7361C102AC90097474E /* layer */,
+				21F8F7331C1024A90097474E /* AnimationMainTableViewController.h */,
+				21F8F7341C1024A90097474E /* AnimationMainTableViewController.m */,
+			);
+			name = animation;
+			sourceTree = "<group>";
+		};
+		21F8F7361C102AC90097474E /* layer */ = {
+			isa = PBXGroup;
+			children = (
+				212293EC1C103DD000F3DB0B /* view */,
+				21F8F7301C1024790097474E /* BaseLayerViewController.h */,
+				21F8F7311C1024790097474E /* BaseLayerViewController.m */,
+				21F8F7371C102B0B0097474E /* DrawWithLayerViewController.h */,
+				21F8F7381C102B0B0097474E /* DrawWithLayerViewController.m */,
+				212293E91C103CC400F3DB0B /* CustomLayerDrawViewController.h */,
+				212293EA1C103CC400F3DB0B /* CustomLayerDrawViewController.m */,
+			);
+			name = layer;
 			sourceTree = "<group>";
 		};
 		21F94EBC1C0D8C5C00ABD56A /* view */ = {
@@ -266,6 +401,8 @@
 			children = (
 				21F94EBD1C0D8C7F00ABD56A /* BaseDrawView.h */,
 				21F94EBE1C0D8C7F00ABD56A /* BaseDrawView.m */,
+				21EBEAB11C0EC4F0007AA574 /* RefreshView.h */,
+				21EBEAB21C0EC4F0007AA574 /* RefreshView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -386,28 +523,49 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FE204C1C06A2DF007B6A3B /* WeiBoViewController.m in Sources */,
+				212293EB1C103CC400F3DB0B /* CustomLayerDrawViewController.m in Sources */,
 				21EE61BC1C0C997300EE9EB1 /* TouchEventViewController.m in Sources */,
+				21FE3B301C1328F200BFC768 /* MyUIViewKeyFrameAnimationViewController.m in Sources */,
+				21FE3B2D1C1328D700BFC768 /* MyUIViewBallAnimationViewController.m in Sources */,
+				21FC8AE11C11811A001D98DE /* GroupAnimationViewController.m in Sources */,
+				215ACF9C1C0F37C800EAEF71 /* MeiTuViewController.m in Sources */,
+				21FE3B331C13291200BFC768 /* MyUIViewTransitionAnimationViewController.m in Sources */,
 				21F846B71C0D3F9600D8258A /* QuartzItem.m in Sources */,
 				2100F1B81C056AC40050CEFF /* ContactViewController.m in Sources */,
+				21FE3B271C1322BB00BFC768 /* FrameByFrameViewController.m in Sources */,
 				21C4B7CA1C0BE713002A4DFF /* LoginViewController.m in Sources */,
+				21EBEAB61C0EC9C3007AA574 /* DrawToImageViewController.m in Sources */,
 				21C862851C04387F00FBC3D0 /* AppDelegate.m in Sources */,
 				2187370E1C0A96FE0013B0E7 /* WJContactViewController.m in Sources */,
 				21C4B7C61C0BE318002A4DFF /* MyPopViewController.m in Sources */,
+				21EBEAB01C0EC40D007AA574 /* RefreshViewController.m in Sources */,
 				21F0E5B61C0DE1E0006209E1 /* BaseContactViewController.m in Sources */,
 				2100F1AE1C0561450050CEFF /* SinglePicViewController.m in Sources */,
+				21EBEAB31C0EC4F0007AA574 /* RefreshView.m in Sources */,
 				21FE20501C06A3BE007B6A3B /* WeiboTableViewCell.m in Sources */,
+				21FE3B2A1C1328A800BFC768 /* MyUIViewBaseAnimationViewController.m in Sources */,
 				2100F1B21C0567790050CEFF /* Contact.m in Sources */,
+				21F6A66D1C0FF291004BA8AD /* MainTableViewController.m in Sources */,
 				21F846BA1C0D418500D8258A /* BaseDrawViewController.m in Sources */,
+				212293EF1C103E0300F3DB0B /* MyLayer.m in Sources */,
 				21EE61C21C0CA5CC00EE9EB1 /* ShakeViewController.m in Sources */,
 				2178E1971C0C7FFF003D245F /* PhotoGestureViewController.m in Sources */,
 				21F94EBF1C0D8C7F00ABD56A /* BaseDrawView.m in Sources */,
 				21F846B41C0D3B5B00D8258A /* QuartzMainViewController.m in Sources */,
 				21C862A71C0446BB00FBC3D0 /* PicScrollViewController.m in Sources */,
+				212293F21C103EDB00F3DB0B /* CustomView.m in Sources */,
 				2100F1B51C0569470050CEFF /* ContactGroup.m in Sources */,
+				21F6A6701C0FF308004BA8AD /* MainItem.m in Sources */,
+				21F8F7321C1024790097474E /* BaseLayerViewController.m in Sources */,
 				21EE61BF1C0C9AA300EE9EB1 /* MyImage.m in Sources */,
 				21FE20491C06A0F3007B6A3B /* WeiboData.m in Sources */,
+				21F8F7351C1024A90097474E /* AnimationMainTableViewController.m in Sources */,
 				21C862821C04387F00FBC3D0 /* main.m in Sources */,
+				21F8F7391C102B0B0097474E /* DrawWithLayerViewController.m in Sources */,
+				212293F61C10443A00F3DB0B /* BaseAnimationViewController.m in Sources */,
 				21F0E5B91C0DE5E1006209E1 /* SearchContactViewController.m in Sources */,
+				21FC8ADE1C117BDA001D98DE /* KeyframeAnimationViewController.m in Sources */,
+				21FE3B241C131DA300BFC768 /* TransitionAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
